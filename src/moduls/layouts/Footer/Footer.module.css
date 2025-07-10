@@ -1,0 +1,58 @@
+.footer {
+    background-color: rgb(62, 62, 62);
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.backToTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+
+.backToTop:hover {
+    transform: translateY(-4px);
+}
+
+.backToTopBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+.backToTop p {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+
+.socialLinks img {
+    width: 50px;
+    height: 50px;
+}
+
+.sign {
+    color: white;
+    font-weight: 550;
+}
+
+.rights {
+    font-weight: 500;
+    margin-left: 8px;
+}

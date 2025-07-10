@@ -1,0 +1,23 @@
+.navbarMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu {
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.menu:hover {
+    transform: translateY(-4px);
+    color: rgb(100, 100, 100);
+}
+
+.menu:global(.active) {
+    color: rgb(25, 25, 25);
+    font-weight: 600;
+}
