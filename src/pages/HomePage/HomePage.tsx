@@ -3,13 +3,15 @@ import { Typewriter } from "react-simple-typewriter";
 
 import SkillsHomePage from "./SkillsHomePage/SkillsHomePage";
 
+import weddingPhoto from "../../../assets/wedding-photo.jpg";
+
 const HomePage = () => {
   return (
     <main>
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <img
-            src="../../../assets/wedding-photo.jpg"
+            src={weddingPhoto}
             alt="Tao Min Kuan"
             className={styles.heroPhoto}
           />
