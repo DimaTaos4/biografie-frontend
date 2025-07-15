@@ -11,10 +11,15 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.backToTop}>
-        <button className={styles.backToTopBtn}>
+        <button
+          className={styles.backToTopBtn}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           <BackToTop />
         </button>
-        <p>Back to top</p>
+        <p onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          Back to top
+        </p>
       </div>
 
       <div className={styles.socialLinks}>
