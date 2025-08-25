@@ -5,6 +5,8 @@ import SkillsHomePage from "./SkillsHomePage/SkillsHomePage";
 
 import weddingPhoto from "../../../assets/wedding-photo.jpg";
 
+import PortfolioHomePage from "./PortfolioHomePage/PortfolioHomePage";
+
 const HomePage = () => {
   return (
     <main>
@@ -35,6 +37,7 @@ const HomePage = () => {
         </div>
       </section>
       <SkillsHomePage />
+      <PortfolioHomePage />
     </main>
   );
 };

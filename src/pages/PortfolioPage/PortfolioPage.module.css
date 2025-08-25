@@ -1,0 +1,165 @@
+.portfolioPage {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 700;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    color: inherit;
+    width: calc(33.33% - 20px);
+    min-width: 280px;
+    max-width: 360px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: slideUp 0.6s forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.webImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .webImage {
+    transform: scale(1.05);
+}
+
+.cardContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    max-height: 6.6em;
+    /* примерно 4 строки */
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease;
+}
+
+.expanded {
+    max-height: 1000px;
+}
+
+.readMoreBtn {
+    margin-top: 10px;
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 0.95rem;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s;
+}
+
+.readMoreBtn:hover {
+    color: #0056b3;
+}
+
+.imageLink {
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+
+    .webImage {
+        height: 160px;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .projectTitle {
+        font-size: 1.1rem;
+    }
+}

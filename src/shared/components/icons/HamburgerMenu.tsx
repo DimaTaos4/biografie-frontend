@@ -2,7 +2,7 @@ type Props = {
   size?: number;
   color?: string;
 };
-const HamburgerMenu = ({ size = 30, color = "black" }: Props) => (
+const HamburgerMenu = ({ size = 45, color = "black" }: Props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill={color}
