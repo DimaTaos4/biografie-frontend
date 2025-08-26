@@ -1,13 +1,28 @@
 import styles from "./Header.module.css";
 import HeaderMenu from "./HeaderMenu/HeaderMenu";
-
 import IntegrationInstructionsOutlinedIcon from "@mui/icons-material/IntegrationInstructionsOutlined";
-
 import { HamburgerMenu } from "../../../shared/components/icons/index";
+import { useEffect, useState } from "react";
+import clsx from "clsx";
 
-const Header = () => {
+type HeaderProps = {
+  onHamburgerClick: () => void;
+};
+
+const Header = ({ onHamburgerClick }: HeaderProps) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className={styles.navbar}>
+    <nav className={clsx(styles.navbar, scrolled && styles.navbarScrolled)}>
       <a href="/">
         <IntegrationInstructionsOutlinedIcon
           fontSize="inherit"
@@ -15,10 +30,11 @@ const Header = () => {
         />
       </a>
       <HeaderMenu />
-      <div className={styles.hamburgerMenu}>
+      <button className={styles.hamburgerMenu} onClick={onHamburgerClick}>
         <HamburgerMenu />
-      </div>
+      </button>
     </nav>
   );
 };
+
 export default Header;

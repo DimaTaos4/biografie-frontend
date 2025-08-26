@@ -3,13 +3,25 @@
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     justify-content: space-between;
-    border: 2px solid #a7a7a7;
+    align-items: center;
+
     padding: 20px 40px;
     background-color: #f9f9f9;
-    align-items: center;
+    border: 2px solid #a7a7a7;
+
+    transition: padding 0.3s ease;
 }
+
+.navbarScrolled {
+    padding: 4px 20px;
+}
+
 
 .logoCode {
     font-size: 60px !important;
@@ -20,5 +32,7 @@
 @media (max-width:615px) {
     .hamburgerMenu {
         display: inline;
+        background-color: transparent;
+        border: none;
     }
 }
