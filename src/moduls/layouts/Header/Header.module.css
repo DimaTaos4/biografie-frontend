@@ -22,6 +22,10 @@
     padding: 4px 20px;
 }
 
+.webIcon {
+    width: 57px;
+    height: 57px;
+}
 
 .logoCode {
     font-size: 60px !important;

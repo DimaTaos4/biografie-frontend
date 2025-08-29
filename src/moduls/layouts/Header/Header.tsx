@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 import HeaderMenu from "./HeaderMenu/HeaderMenu";
-import IntegrationInstructionsOutlinedIcon from "@mui/icons-material/IntegrationInstructionsOutlined";
+import webLogoIcon from "../../../../assets/web-development-logo.svg";
 import { HamburgerMenu } from "../../../shared/components/icons/index";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
@@ -24,10 +24,7 @@ const Header = ({ onHamburgerClick }: HeaderProps) => {
   return (
     <nav className={clsx(styles.navbar, scrolled && styles.navbarScrolled)}>
       <a href="/">
-        <IntegrationInstructionsOutlinedIcon
-          fontSize="inherit"
-          className={styles.logoCode}
-        />
+        <img src={webLogoIcon} alt="web-icon" className={styles.webIcon} />
       </a>
       <HeaderMenu />
       <button className={styles.hamburgerMenu} onClick={onHamburgerClick}>
