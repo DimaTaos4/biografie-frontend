@@ -1,69 +1,47 @@
-# React + TypeScript + Vite
+# Personal Portfolio Website 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🇬🇧 English
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📌 Description
+This is my personal portfolio website, developed to showcase my projects, skills, and experience as a Full Stack Web Developer.  
+It serves as my digital business card and a central place where people can explore my work.  
 
-## Expanding the ESLint configuration
+The website is built with React + TypeScript and styled using CSS Modules. It is fully responsive and optimized for desktop, tablet, and mobile devices.  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### ✨ Features
+- 🏠 Home page – quick introduction and overview  
+- 💻 Skills page – presentation of technical stack and competencies  
+- 📂 Portfolio page – list of projects with links to GitHub and live demos  
+- ⚠️ NotFoundPage – custom 404 error page  
+- 🔗 Integration of links to LinkedIn, GitHub, and other resources  
+- 📱 Responsive design for all devices  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### ⚙️ Tech Stack
+- Frontend: React, TypeScript, React Router DOM  
+- Styling: CSS Modules  
+- Build Tool: Vite  
+- Version Control: Git & GitHub  
+- Deployment: Vercel  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🚀 Installation and Running
+```bash
+# Clone the repository
+git clone <repository URL>
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Navigate into the project folder
+cd personal-portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
