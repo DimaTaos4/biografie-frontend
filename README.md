@@ -2,8 +2,6 @@
 
 ---
 
-## 🇬🇧 English
-
 ### 📌 Description
 This is my personal portfolio website, developed to showcase my projects, skills, and experience as a Full Stack Web Developer.  
 It serves as my digital business card and a central place where people can explore my work.  
