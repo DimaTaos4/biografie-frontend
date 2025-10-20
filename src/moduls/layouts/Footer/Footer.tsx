@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.sign}>
-        @2025 Tao Min Kuan
+        ©2025 Tao Min Kuan
         <span className={styles.rights}>All Rights Reserved.</span>
       </div>
     </footer>
